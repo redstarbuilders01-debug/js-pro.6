@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>SUM IN ARRGUMENTS</h1>
+        <p>ARGUMENTS IS NOTHING BUT THE VALUES ASSIGNED TO THE PERAMETERS</p>
+        <p id="result"></p>
+        <script>
+        x = sumAll(1, 123, 500, 115, 44, 88);
+function sumAll() {
+  let sum = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}
+</script>
+  document.getElementById("result").innerHTML=sum;
+    </body>
+</html>
